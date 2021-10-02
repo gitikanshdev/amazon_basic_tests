@@ -62,7 +62,7 @@ class Test_001:
         ##### applying filters and wait
         ## filter : get item by tomorrow        
         
-        element = self.bp.find_element("//div[@class='a-section a-spacing-double-large']/div[1]/ul/li[1]/span/a/div/label/i")
+        element = self.bp.find_element("//div[@class='a-section a-spacing-double-large']/div[1]/ul/li[@aria-label='Get It by Tomorrow']/span/a/div/label/i")
         self.bp.click_element(element)
         self.bp.sleep(5)
         
